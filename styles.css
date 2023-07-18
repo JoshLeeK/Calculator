@@ -1,0 +1,112 @@
+:root {
+    --background: #f6f6f6;
+    --font: #222;
+    --border: #333;
+    --screen: #eee;
+    --calculator: #aaa;
+    --btn: #eee;
+    --btn-hover: #ddd;
+    --btn-active: #ccc;
+    --btn-red: #faa;
+    --btn-red-hover: #e99;
+    --btn-red-active: #d88;
+    --btn-blue: #aaf;
+    --btn-blue-hover: #99e;
+    --btn-blue-active: #88d;
+  }
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+.calculator {
+    width: 400px;
+    height: 600px;
+    background-color: gray;
+    margin-top: 100px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.screen {
+    width: 350px;
+    height: 150px;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    text-align: right;
+    border: 2px solid #222;
+}
+
+.scrncon {
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+#result {
+    font-size: 24px;
+}
+
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .span-2 {
+    grid-column: span 2;
+  }
+
+/* Buttons */
+
+.btn, .btnOp, .btneq, .btnclr {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    background-color: var(--btn);
+    font-size: 20px;
+  }
+  
+  
+  .btn:hover,.btnOp:hover, .btneq:hover {
+    background-color: var(--btn-hover);
+  }
+  
+  .btn:active, .btnOp:active, .btneq:active {
+    background-color: var(--btn-active);
+  }
+  
+  .btn-red {
+    background-color: var(--btn-red);
+  }
+  
+  .btn-red:hover {
+    background-color: var(--btn-red-hover);
+  }
+  
+  .btn-red:active {
+    background-color: var(--btn-red-active);
+  }
+  
+  .btn-blue {
+    background-color: var(--btn-blue);
+  }
+  
+  .btn-blue:hover {
+    background-color: var(--btn-blue-hover);
+  }
+  
+  .btn-blue:active {
+    background-color: var(--btn-blue-active);
+  }
