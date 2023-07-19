@@ -110,3 +110,9 @@
   .btn-blue:active {
     background-color: var(--btn-blue-active);
   }
+
+  .git {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
